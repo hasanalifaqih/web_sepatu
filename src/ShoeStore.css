@@ -1,0 +1,114 @@
+/* ShoeStore.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.shoe-store {
+  width: 100%;
+  max-width: 700px;
+  background: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.form, .search {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.form input, .search input {
+  flex: 1 1 calc(33% - 10px);
+  min-width: 150px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #0056b3;
+}
+
+.shoe-list {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.shoe-item {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.shoe-item h3 {
+  font-size: 1.2rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.shoe-item p {
+  font-size: 1rem;
+  color: #666666;
+  margin: 5px 0;
+}
+
+.shoe-item button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.shoe-item button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.shoe-item button:first-child:hover {
+  background-color: #218838;
+}
+
+.shoe-item button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.shoe-item button:last-child:hover {
+  background-color: #c82333;
+}
