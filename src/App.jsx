@@ -79,7 +79,7 @@ const ShoeStore = () => {
                     <div className="shoe-item" key={item.id}>
                         <h3>{item.nama}</h3>
                         <p>Merek: {item.merek}</p>
-                        <p>Harga: Rp {item.harga}</p>
+                        <p>Jumlah: {item.jumlah}</p>
                         <button onClick={() => handleEditSepatu(item)}>Edit</button>
                         <button onClick={() => handleHapusSepatu(item.id)}>Hapus</button>
                     </div>

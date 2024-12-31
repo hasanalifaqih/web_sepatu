@@ -112,3 +112,37 @@ h1 {
 .shoe-item button:last-child:hover {
   background-color: #c82333;
 }
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .shoe-store {
+      padding: 15px;
+  }
+
+  .form, .search {
+      flex-direction: column;
+  }
+
+  .form input, .search input {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .shoe-list {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* Gaya untuk perangkat dengan lebar maksimum 600px */
+@media (max-width: 600px) {
+  body {
+      background-color: lightblue;
+  }
+}
+
+/* Gaya untuk perangkat dengan lebar lebih dari 600px */
+@media (min-width: 601px) {
+  body {
+      background-color: lightgreen;
+  }
+}
